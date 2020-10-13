@@ -1,0 +1,103 @@
+<!-- Tugas Pertemuan 4 Praktikum Basis Web - Karlina Surya Witanto 1808561014-->
+
+<!DOCTYPE html> <!-- untuk syntax html 5-->
+<html lang="en"> <!-- bahasa html -->
+
+<head>
+    <meta charset="UTF-8"> <!-- pengkodean karakter utf 8 yg sdh menjadi standardisasi dlm pemrograman-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--untuk setting dimensi & skala page-->
+    <title>TABEL ABSENSI MAHASISWA</title> <!--judul dari page-->
+</head>
+
+<body>
+
+    <body>
+        <center> <!-- untuk membuat posisi center di tiap elemen -->
+            <h1>DATA ABSENSI MAHASISWA</h1> <!-- tag heading 1 dengan posisi center -->
+            <p>PRAKTIKUM PEMROGRAMAN BERBASIS WEB</p> <!-- tag paragraf posisi center -->
+        </center>
+        <hr>
+        <br>
+        <table border="1" align="center" style="text-align: center; width: 100%;"> <!-- tag table full page -->
+            <tr bgcolor="#FFDAB9"> <!-- table row disertai warna baground -->
+                <td rowspan="2"><b>No</b></td> <!-- rowspan utk gabung baris -->
+                <td rowspan="2"><b>Nama</b></td>
+                <td colspan="5"><b>Pertemuan</b></td> <!-- colspan utk gabung kolom -->
+            </tr>
+            <tr bgcolor="#FFDAB9"> <!-- table row disertai warna baground -->
+                <!-- table head dengan lebar 50px -->
+                <th width=50px>1</th>
+                <th width=50px>2</th>
+                <th width=50px>3</th>
+                <th width=50px>4</th>
+                <th width=50px>5</th>
+            </tr>
+            <tr>
+                <td>001</td> <!-- table data -->
+                <td>Karlina Surya Witanto</td> <!-- table data -->
+                <td> <img src="img.png" style="width: 30%; height: 20%;" alt=""></td> <!-- table data dengan img sbg ttd -->
+                <td><span>&#10060;</span></td> <!-- table data dgn symbol cross -->
+                <td><span>&#10060;</span></td>
+                <td> <img src="img.png" style="width: 30%; height: 20%;" alt=""></td>
+                <td> <img src="img.png" style="width: 30%; height: 20%;" alt=""></td>
+            </tr>
+            <tr>
+                <td>002</td> <!-- table data -->
+                <td>Komang Putas</td> <!-- table data -->
+                <td> <img src="img.png" style="width: 30%; height: 20%;" alt=""></td> <!-- table data dengan img sbg ttd -->
+                <td> <img src="img.png" style="width: 30%; height: 20%;" alt=""></td>
+                <td> <img src="img.png" style="width: 30%; height: 20%;" alt=""></td>
+                <td><span>&#10060;</span></td> <!-- table data dgn symbol cross -->
+                <td><span>&#10060;</span></td>
+            </tr>
+            <tr>
+                <td>003</td> <!-- table data -->
+                <td>Hyun Di</td> <!-- table data -->
+                <td><span>&#10060;</span></td> <!-- table data dgn symbol cross -->
+                <td><span>&#10060;</span></td>
+                <td><span>&#10060;</span></td>
+                <td><span>&#10060;</span></td>
+                <td><span>&#10060;</span></td>
+
+            </tr>
+            <tr>
+                <td>004</td> <!-- table data -->
+                <td>Susilayasa</td> <!-- table data -->
+                <td> <img src="img.png" style="width: 30%; height: 20%;" alt=""></td> <!-- table data dengan img sbg ttd -->
+                <td> <img src="img.png" style="width: 30%; height: 20%;" alt=""></td>
+                <td> <img src="img.png" style="width: 30%; height: 20%;" alt=""></td>
+                <td> <img src="img.png" style="width: 30%; height: 20%;" alt=""></td>
+                <td> <img src="img.png" style="width: 30%; height: 20%;" alt=""></td>
+            </tr>
+            <tr>
+                <td>005</td> <!-- table data -->
+                <td>Arlene Tanuwijaya</td> <!-- table data -->
+                <td> <img src="img.png" style="width: 30%; height: 20%;" alt=""></td> <!-- table data dengan img sbg ttd -->
+                <td><span>&#10060;</span></td> <!-- table data dgn symbol cross -->
+                <td><span>&#10060;</span></td>
+                <td> <img src="img.png" style="width: 30%; height: 20%;" alt=""></td>
+                <td> <img src="img.png" style="width: 30%; height: 20%;" alt=""></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table border="1"> <!-- membuat table border -->
+            <tr>
+                <th bgcolor="#FFDAB9" colspan="2">Keterangan</th> <!-- table head dengan gabung 2 kolom dan pemberian warna background-->
+            </tr>
+            <tr>
+                <td>
+                    <span>&#9989;</span> <!-- symbol centang -->
+                </td>
+                <td>Hadir</td>
+            </tr>
+            <tr>
+                <td><span>&#10060;</span></td> <!-- symbol cross -->
+                <td>Tidak Hadir</td>
+            </tr>
+        </table>
+    </body>
+
+</body>
+
+</html>
