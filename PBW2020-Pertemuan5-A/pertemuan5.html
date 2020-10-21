@@ -1,0 +1,103 @@
+<!--Praktikum Basis Web Pertemuan 5 - Karlina Surya Witanto 1808561014-->
+
+<!DOCTYPE html> <!-- untuk syntax html -->
+<html lang="en"> <!-- bahasa html -->
+<head>
+    <meta charset="UTF-8"> <!-- pengkodean karakter utf 8 yg sdh menjadi standardisasi dlm pemrograman-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--untuk setting dimensi & skala page-->
+    <link rel="icon" href="logo.png"> <!-- icon dari page -->
+    <link rel="stylesheet" href="pertemuan5.css"> <!-- memanggil css -->
+    <title>HALAMAN PENDAFTARAN</title> <!-- judul dari page -->
+</head>
+<body>
+    <!--pengelompokan suatu elemen dengan divisi id header-->
+    <div id="header">
+        <!-- header 1 dengan class header -->
+        <h1 class="header">Halaman Pendaftaran Peserta</h1>
+        <!-- header 4 dengan class header -->
+        <h4 class="header">Pendaftaran Peserta Penanaman 1000 Pohon di Bali oleh Pemerintah Bali</h4>
+    </div>
+
+    <!--pengelompokan suatu elemen dengan divisi id form-->
+    <div id="form">
+        <!-- tag form html -->
+        <form action="">
+            <!-- tag table dengan nilai border = 0 -->
+            <table border="0">
+                <!-- pembuka tag row -->
+                <tr>
+                    <!-- 6 tag table data dengan width 10% -->
+                    <td width=10%></td>
+                    <td width=10%></td>
+                    <td width=10%></td>
+                    <td width=10%></td>
+                    <td width=10%></td>
+                    <td width=10%></td>
+                </tr> <!-- penutup tag row -->
+                <!-- pembuka tag row -->
+                <tr>
+                    <!-- 2 buah tag table data dengan colspan = 4.5 yang berisi input text -->
+                    <!-- place holder utk menampilkan deskripsi dari kolom input -->
+                    <td colspan="4.5"><input type="text" id="namaLengkap" class="input" placeholder="Nama Lengkap"></td>
+                    <td colspan="4.5"><input type="text" id="namaPanggilan" class="input" placeholder="Nama Panggilan"></td>
+                </tr> <!-- penutup tag row -->
+                <!-- tag row -->
+                <tr>
+                    <!-- 2 buah tag table data dengan colspan = 4.5 yang berisi input text -->
+                    <!-- place holder utk menampilkan deskripsi dari kolom input -->
+                    <td colspan="4.5"><input type="text" id="noTelp" class="input" placeholder="No. Telp"></td>
+                    <td colspan="4.5"><input type="text" id="email" class="input" placeholder="Email"></td>
+                </tr>
+                <!-- tag row -->
+                <tr>
+                    <!-- 2 buah tag table data dengan colspan = 3  yang berisi input text dan form select -->
+                    <!-- place holder utk menampilkan deskripsi dari kolom input -->
+                    <td colspan="3"><input type="text" id="tglLahir" class="input" placeholder="Tanggal Lahir"></td>
+                    <td colspan="3"><input type="text" id="tempatLahir" class="input" placeholder="Tempat Lahir"></td>
+                    <td colspan="9"> <!-- tag table data dgn colspan = 9 yg berisi select option -->
+                        <!-- form select untuk pilihan agama -->
+                        <select name="agama" id="agama">
+                            <option disabled selected>Agama</option>
+                            <option value="islam">Islam</option>\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+                            <option value="kristen">Kristen</option>
+                            <option value="katolik">Katolik</option>
+                            <option value="hindu">Hindu</option>
+                            <option value="buddha">Buddha</option>
+                            <option value="khonghucu">Khonghucu</option>
+                        </select>
+                    </td>
+                </tr>
+                <!-- tag row -->
+                <tr>
+                    <!-- 2 buah table data dengan colspan = 3 dan 1 buah table data dg colspan =1 yang berisi input text -->
+                    <!-- place holder utk menampilkan deskripsi dari kolom input -->
+                    <td colspan="3"><input type="univ" id="univ" class="input" placeholder="Universitas"></td>
+                    <td colspan="3"><input type="fakJur" id="fakJur" class="input" placeholder="Fakultas/Jurusan"></td>
+                    <td colspan="1"><input type="jabatan" id="jabatan" class="input" placeholder="Jabatan"></td>
+                </tr>
+                <!-- table row -->
+                <tr>
+                    <!-- table data dengan colspan 10 yang berupa inputan text-->
+                    <!-- place holder utk menampilkan deskripsi dari kolom input -->
+                    <td colspan="10"><input type="text" id="alamat" class="input" placeholder="Alamat Asal"></td>
+                </tr>
+                <!-- table row -->
+                <tr>
+                    <!-- 3 table data dengan colspan = 3 yang berisi input file -->
+                    <!-- place holder utk menampilkan deskripsi dari kolom input -->
+                    <!-- inputan type file foto-->
+                    <td colspan="3"><label for="foto">Foto Almameter</label><br><input type="file" id="foto" name="foto"></td>
+                    <!-- inputan type file pdf-->
+                    <td colspan="3"><label for="ktp">Scan KTP</label><br><input type="file" id="ktp" name="ktp"></td>
+                    <td colspan="3"></td>
+                </tr>
+                <!-- table row -->
+                <tr>
+                    <!-- table data berisi button type submit -->
+                    <td><button type="submit" class="daftar">Daftar</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
