@@ -1,0 +1,91 @@
+html {
+  background: black;
+}
+
+.kalkulator {
+  width: 350px;
+  background: #eaeaea;
+  margin: 50px auto 0px auto;
+  padding: 7px;
+  border-radius: 5px;
+}
+/*buat layar calculator*/
+#layar {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #cecece;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  padding: 7px 5px;
+  text-align: right;
+  outline: none;
+  margin-bottom: 15px;
+  height: 70px;
+}
+
+/*buat button operator*/
+.container-tombol {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*buat button angka*/
+.tombol { 
+  display: flex;
+  width: 20%;
+  font-size: 20px;
+  font-weight: bold;
+  height: 70px;
+  border: 1px solid #cecece;
+  border-left: none;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-left: 13px;
+  margin-bottom: 7px;
+}
+/*buat button nol dan sama dengan*/
+.tombol0 {
+  display: flex;
+  width: 20%;
+  font-size: 20px;
+  font-weight: bold;
+  height: 70px;
+  border: 1px solid #cecece;
+  border-left: none;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 10px 10px 10px;
+  margin-left: 12px;
+  margin-bottom: 7px;
+  margin-right: 9px;
+}
+
+.tombol:nth-child(4n + 1) {
+  border-left: 1px solid #cecece;
+}
+.tombol:hover {
+  background: grey;
+  cursor: pointer;
+}
+.tombol0:nth-child(4n + 1) {
+  border-left: 0px solid #969696;
+}
+.tombol0:hover {
+  background: grey;
+  cursor: pointer;
+}
+#nol {
+  flex-grow: 2;
+}
+.operator {
+  background: #d8d8d8;
+}
+#hasil {
+  background: orange;
+  color: white;
+}
